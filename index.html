@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Giao diện giản lược</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Nhúng FontAwesome để lấy các icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. FIXED HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <i class="fa-brands fa-facebook logo"></i>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm trên Facebook">
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <a href="#" class="nav-btn active"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-btn"><i class="fa-solid fa-tv"></i></a>
+            <a href="#" class="nav-btn"><i class="fa-solid fa-store"></i></a>
+            <a href="#" class="nav-btn"><i class="fa-solid fa-users"></i></a>
+            <a href="#" class="nav-btn"><i class="fa-solid fa-gamepad"></i></a>
+        </div>
+        
+        <div class="header-right">
+            <div class="icon-btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="icon-btn"><i class="fa-brands fa-facebook-messenger"></i></div>
+            <div class="icon-btn"><i class="fa-solid fa-bell"></i></div>
+            <div class="avatar-btn">
+                <img src="https://picsum.photos/40" alt="Avatar">
+            </div>
+        </div>
+    </header>
+
+    <!-- KHOẢNG CHỨA NỘI DUNG CHÍNH (ĐƯỢC ĐẨY XUỐNG DƯỚI HEADER) -->
+    <div class="main-container">
+        
+        <!-- 2. SIDEBAR TRÁI -->
+        <aside class="sidebar-left">
+            <ul>
+                <li class="menu-item"><img src="https://picsum.photos/40" alt="Avatar"><span>Nguyễn Văn A</span></li>
+                <li class="menu-item"><i class="fa-solid fa-user-group icon-blue"></i><span>Bạn bè</span></li>
+                <li class="menu-item"><i class="fa-solid fa-clock icon-blue"></i><span>Kỷ niệm</span></li>
+                <li class="menu-item"><i class="fa-solid fa-bookmark icon-purple"></i><span>Đã lưu</span></li>
+                <li class="menu-item"><i class="fa-solid fa-people-group icon-blue"></i><span>Nhóm</span></li>
+                <li class="menu-item"><i class="fa-solid fa-store icon-blue"></i><span>Marketplace</span></li>
+                <li class="menu-item"><i class="fa-solid fa-tv icon-blue"></i><span>Feeds</span></li>
+            </ul>
+        </aside>
+
+        <!-- 3. NỘI DUNG CHÍNH (NEWS FEED) -->
+        <main class="feed-content">
+            
+            <!-- Tạo bài viết -->
+            <div class="card create-post">
+                <div class="post-input-container">
+                    <img src="https://picsum.photos/40" alt="Avatar">
+                    <input type="text" placeholder="A ơi, bạn đang nghĩ gì thế?">
+                </div>
+                <hr>
+                <div class="post-actions">
+                    <button><i class="fa-solid fa-video icon-red"></i> Video trực tiếp</button>
+                    <button><i class="fa-solid fa-images icon-green"></i> Ảnh/video</button>
+                    <button><i class="fa-solid fa-face-smile icon-yellow"></i> Cảm xúc/hoạt động</button>
+                </div>
+            </div>
+
+            <!-- Bài viết 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://picsum.photos/41" alt="Avatar">
+                    <div class="post-info">
+                        <h4>Lập Trình Web</h4>
+                        <span>2 giờ · <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <p class="post-text">Hôm nay chúng ta cùng thực hành làm giao diện Facebook bằng HTML5 và CSS nhé!</p>
+                <img class="post-img" src="https://picsum.photos/600/350" alt="Bài viết">
+                <div class="post-stats">
+                    <div class="like-btn"><i class="fa-solid fa-thumbs-up"></i> 120</div>
+                    <div>45 bình luận · 12 chia sẻ</div>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://picsum.photos/42" alt="Avatar">
+                    <div class="post-info">
+                        <h4>CodeGym Việt Nam</h4>
+                        <span>5 giờ · <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <p class="post-text">Xây dựng giao diện Responsive giúp trang web hiển thị đẹp trên mọi thiết bị.</p>
+                <img class="post-img" src="https://picsum.photos/600/300" alt="Bài viết">
+            </div>
+
+        </main>
+
+        <!-- 4. SIDEBAR PHẢI -->
+        <aside class="sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul>
+                <li class="contact-item"><img src="https://picsum.photos/43" alt="User"><span>Trần Văn B</span></li>
+                <li class="contact-item"><img src="https://picsum.photos/44" alt="User"><span>Lê Thị C</span></li>
+                <li class="contact-item"><img src="https://picsum.photos/45" alt="User"><span>Phạm Hoàng D</span></li>
+                <li class="contact-item"><img src="https://picsum.photos/46" alt="User"><span>Vũ Minh E</span></li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>
